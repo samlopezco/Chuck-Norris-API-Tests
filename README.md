@@ -2,5 +2,7 @@
 Uses Chuck Norris API from api.chucknorris.io
 
 Running:
-npm install
-npm start
+<ul>
+<li>npm install</li>
+<li>npm start</li>
+</ul>
