@@ -1,8 +1,37 @@
 extends layout
 
 block content
-  .card.col-lg-6.align-middle.text-white.bg-secondary
-    .text-nowrap.display-4.card-header Chuck Norris API Demo
-    .card-body
-      p#data.lead
-      button.refresh.btn.btn-dark Refresh
+  .row
+    .card.col-lg-6.align-middle.text-white.bg-secondary
+      .text-nowrap.display-4.card-header Categories
+      .card-body
+        .row
+          table.offset-lg-3
+            tr
+              td
+                .btn-group-vertical(role=group)
+                  button(type='button').btn.btn-light.category Animal
+                  button(type='button').btn.btn-light.category Career
+                  button(type='button').btn.btn-light.category Celebrity
+                  button(type='button').btn.btn-light.category Dev
+                  button(type='button').btn.btn-light.category Explicit
+                  button(type='button').btn.btn-light.category Fashion
+                  button(type='button').btn.btn-light.category Food
+                  button(type='button').btn.btn-light.category History
+              td
+                .btn-group-vertical(role=group)
+                  button(type='button').btn.btn-light.category Money
+                  button(type='button').btn.btn-light.category Movie
+                  button(type='button').btn.btn-light.category Music
+                  button(type='button').btn.btn-light.category Political
+                  button(type='button').btn.btn-light.category Religion
+                  button(type='button').btn.btn-light.category Science
+                  button(type='button').btn.btn-light.category Sport
+                  button(type='button').btn.btn-light.category Travel
+              tr
+                td
+                  button.offset-lg-6.refresh.btn.btn-block.btn-light.text-nowrap.my-4 Random
+    .card.col-lg-6.align-middle.text-white.bg-secondary
+        .text-nowrap.display-4.card-header Result
+        .card-body
+          p#data.lead.justify-content-center
