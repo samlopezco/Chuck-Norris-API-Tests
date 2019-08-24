@@ -20,7 +20,6 @@ socket.on('joke',function(data){
     updateText("data",data.data)
 });
 
-
 function updateText(element, value){
     document.getElementById(element).innerText = value;
 }
